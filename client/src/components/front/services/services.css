@@ -1,0 +1,73 @@
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 10px;
+}
+
+.service-container h2 {
+    width: 100%;
+    text-align: center;
+    color: #F50057;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 560px) {
+    .service-container h2{
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 345px) {
+    .service-container h2{
+      font-size: 25px;
+    }
+  }
+
+.service-container .service-card {
+    width: 45vh;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fe;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 560px) {
+    .service-container .service-card{
+        width: 25vh;
+    }
+  }
+
+.service-container .service-card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+                inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+.service-container .service-card h3 {
+    color: #F50057;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 560px) {
+    .service-container .service-card h3{
+        font-size: 25px;
+    }
+  }
+
+.service-container .service-card p {
+    color: rgb(110, 110, 110);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.imgBox img {
+    height: 100px;
+}
