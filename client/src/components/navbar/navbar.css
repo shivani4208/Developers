@@ -14,7 +14,8 @@
 }
 
 p {
-    font-size: 150px;
+    font-size: 50px;
+    align-self: flex-start;
 }
 
 .name a {
@@ -25,6 +26,12 @@ p {
     color: #ffF;
     text-decoration: none;
     padding-left: 10px;
+    position: relative;
+    left: -200px;
+}
+
+.name a:hover{
+    color: #fff;
 }
 
 .reflection {
@@ -32,30 +39,20 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     position: relative;
-    left: -120px;
+    right: 1020px;
     z-index: -1;
 }
 
-/* Subnav */
-
-.subnav {
-    display: flex;
-    justify-content: space-between;
-    height: 65px;
-    padding-right: 20px;
-    background: rgb(155, 155, 155);
-    border-bottom: 1px solid rgb(124, 124, 124);
-}
-
-.subnav .profile {
+.profile {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 190px;
+    margin: 10px;
 }
 
-.subnav .profile img {
+.profile img {
     height: 35px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin: 10px;
 }

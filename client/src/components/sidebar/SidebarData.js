@@ -1,10 +1,9 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa'
 import * as CgIcons from 'react-icons/cg'
-import * as AiIcons from 'react-icons/ai'
+import * as BsIcons from 'react-icons/bs'
 import * as RiIcons from 'react-icons/ri'
 import * as IoIcons from 'react-icons/io'
-import * as GiIcons from 'react-icons/gi'
 
 export const SidebarData = [
     {
@@ -41,12 +40,12 @@ export const SidebarData = [
     {
         title: 'Cart',
         path: '/cart',
-        icon: <AiIcons.AiOutlineCode />,
+        icon: <BsIcons.BsFillCartFill />,
     },
 
     {
         title: 'Chat',
         path: '/chat',
-        icon: <GiIcons.GiSaveArrow />,
+        icon: <BsIcons.BsFillChatDotsFill />,
     }
 ];

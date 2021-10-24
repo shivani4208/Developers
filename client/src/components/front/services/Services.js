@@ -8,7 +8,6 @@ const Services = () => {
     return (
         <>
             <div className="service-container">
-                <h2>Services.</h2>
                 <div className="service-card">
                     <div className="imgBox">
                         <img src={one} alt="img"/>
