@@ -17,17 +17,18 @@ const Post = ({ post, setCurrentId }) => {
         if (post.likes.length > 0) {
             return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
                 ? (
-                    <><AiFillLike />&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
+                    <><AiFillLike style={{fontSize:"50px"}}/>&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
                 ) : (
-                    <><AiOutlineLike />&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
+                    <><AiOutlineLike style={{fontSize:"50px"}}/>&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
                 );
         }
-        return <><AiOutlineLike />&nbsp;Like</>;
+        return <><AiOutlineLike style={{fontSize:"150px"}}/>&nbsp;Like</>;
     };
 
     return (
         <CardLayout style={{ maxWidth: "55vh" }}>
-            <PostCreator>By -{post.creator}</PostCreator>
+            <img image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
+            <PostCreator>By -{post.name}</PostCreator>
             <PostDate>{moment(post.createdAt).fromNow()}</PostDate>
             {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
                 <div>

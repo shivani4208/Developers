@@ -24,7 +24,9 @@ app.get('/',(req,res) => {
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost/base', {useNewUrlParser: true,useUnifiedTopology: true });
+const CONNECTION_URL = 'mongodb+srv://shopway:shopway@123@cluster0.wa9mq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
+mongoose.connect(CONNECTION_URL, {useNewUrlParser: true,useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

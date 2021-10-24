@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from './components/navbar/Navbar';
-// import Dashboard from './components/Dashboard/Dashboard';
+import PostsDashboard from './components/Dashboard/Dashboard';
 import Dashboard from './components/Dashboard';
 import Cart from './components/Cart/Cart';
 import Details from './components/Details/Details';
@@ -21,6 +21,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Dashboard} />
             <Route path="/auth" exact component={Auth} />
+            <Route path="/posts" exact component={PostsDashboard} />
             <Route path="/cart" component={Cart} />
             <Route path="/details" component={Details} />
           </Switch>

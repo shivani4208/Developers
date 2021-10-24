@@ -2,14 +2,13 @@ import React from 'react';
 import Post from './Post/Post';
 import { useSelector } from "react-redux";
 import { Cards } from "../../components/PageStyles/Cards";
-import { Heading } from '../PageStyles/Heading';
 
 const Posts = ({ setCurrentId }) => {
     const posts = useSelector((state) => state.posts);
     
     return (
         <>
-        <Heading>Your Posts</Heading>
+        <h1 className="text-warning">Your Posts</h1>
         <Cards>
             <div>
                 {posts.map((post) => (
