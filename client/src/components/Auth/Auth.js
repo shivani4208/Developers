@@ -6,7 +6,6 @@ import { useHistory } from 'react-router-dom';
 import { AUTH } from "../../constants/actionTypes";
 import { signin, signup } from "../../actions/auth";
 import Main from '../front/main/Main';
-import { Cards } from '../PageStyles/Cards';
 import Services from '../front/services/Services';
 import { FormLayout, FormTitle } from '../PageStyles/Forms';
 import { ButtonElement, AuthOption } from "../PageStyles/Button";

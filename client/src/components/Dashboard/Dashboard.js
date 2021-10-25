@@ -3,7 +3,6 @@ import Form from '../Form/Form';
 import Posts from '../Posts/Posts';
 import { useDispatch } from "react-redux";
 import { getPosts } from "../../actions/posts";
-import { Cards } from '../PageStyles/Cards';
 
 const Dashboard = () => {
 

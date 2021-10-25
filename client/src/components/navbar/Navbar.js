@@ -44,12 +44,12 @@ const Navbar = () => {
             <div>
                 {user?.result ? (
                     <div className="profile">
-                        <img alt={user?.result.name} src={user?.result.imageUrl} style={{ paddingTop: "5px" }} />
-                        <h4 style={{ color: "white", paddingTop: "5px" }}>{user?.result.name}</h4>
-                        <button style={{ background: "transparent", border: "none" }} variant="contained" onClick={logout} ><ImSwitch className="m-3" style={{ color: "white", fontSize: "20px" }} /></button>
+                        <img alt={user?.result.name} src={user?.result.imageUrl} />
+                        <h4 style={{ color: "white", paddingTop: "5px" }}>Hello, {user?.result.name}</h4>
+                        <button style={{ background: "transparent", border: "none" }} variant="contained" onClick={logout} ><ImSwitch className="mb-4" style={{ color: "white", fontSize: "20px" }} /></button>
                     </div>
                 ) : (
-                    <ButtonElement style={{ width: "auto" }}><a style={{ textDecoration: "none", color: "white" }} href="/auth#card">Sign In</a></ButtonElement>
+                    <ButtonElement className="mb-4" style={{ width: "auto" }}><a style={{ textDecoration: "none", color: "white" }} href="/auth#card">Sign In</a></ButtonElement>
                 )}
             </div>
         </div>

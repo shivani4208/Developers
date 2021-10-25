@@ -13,7 +13,7 @@ export const PostCreator = styled.h2`
     text-align: center;
     width: 100%;
     font-size: 1rem;
-    color: #fff;
+    color: #474747;
     font-style: italic;
     font-family: 'Farro', sans-serif;
 `;
@@ -29,7 +29,6 @@ export const PostDate = styled.h2`
 export const PostTag = styled.h2`
     text-align: center;
     font-size: 1rem;
-    color: #fff;
     font-weight: 200;
 `;
 
@@ -37,7 +36,6 @@ export const PostTitle = styled.h2`
     text-align: center;
     width: 100%;
     font-size: 1.7rem;
-    color: #fff;
     font-family: 'Farro', sans-serif;
 `;
 
@@ -45,6 +43,5 @@ export const PostMessage = styled.h3`
     text-align: center;
     width: 100%;
     font-size: 1.3rem;
-    color: #fff;
     font-family: 'Farro', sans-serif;
 `;

@@ -17,12 +17,12 @@ const Post = ({ post, setCurrentId }) => {
         if (post.likes.length > 0) {
             return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
                 ? (
-                    <><AiFillLike style={{fontSize:"50px"}}/>&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
+                    <><AiFillLike className="like-btn"/>&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
                 ) : (
-                    <><AiOutlineLike style={{fontSize:"50px"}}/>&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
+                    <><AiOutlineLike className="like-btn"/>&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
                 );
         }
-        return <><AiOutlineLike style={{fontSize:"150px"}}/>&nbsp;Like</>;
+        return <div className="likebtn"><AiOutlineLike className="like-btn"/>&nbsp;Like</div>;
     };
 
     return (
