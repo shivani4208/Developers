@@ -9,6 +9,21 @@ export const Heading = styled.h1`
     font-family: 'Farro', sans-serif;
 `;
 
+export const LoginHeading = styled.h1`
+    font-size: 3rem;
+    color: #F50057;
+    font-weight: 700;
+    font-family: 'Farro', sans-serif;
+`;
+
+export const LoginContent = styled.h1`
+    font-size: 1.5rem;
+    color: #F50057;
+    font-weight: 500;
+    font-family: 'Farro', sans-serif;
+    margin: 0 0 20px 0;
+`;
+
 export const PostCreator = styled.h2`
     text-align: center;
     width: 100%;

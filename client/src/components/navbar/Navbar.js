@@ -46,10 +46,10 @@ const Navbar = () => {
                     <div className="profile">
                         <img alt={user?.result.name} src={user?.result.imageUrl} />
                         <h4 style={{ color: "white", paddingTop: "5px" }}>Hello, {user?.result.name}</h4>
-                        <button style={{ background: "transparent", border: "none" }} variant="contained" onClick={logout} ><ImSwitch className="mb-4" style={{ color: "white", fontSize: "20px" }} /></button>
+                        <button style={{ background: "transparent", border: "none" }} variant="contained" onClick={logout} ><ImSwitch className="mb-4" style={{ color: "white", fontSize: "20px", marginTop:"5px" }} /></button>
                     </div>
                 ) : (
-                    <ButtonElement className="mb-4" style={{ width: "auto" }}><a style={{ textDecoration: "none", color: "white" }} href="/auth#card">Sign In</a></ButtonElement>
+                    <ButtonElement className="mb-4" style={{ width: "auto", position:"relative", left:"-70px" }}><a style={{ textDecoration: "none", color: "white" }} href="/auth#card">Sign In</a></ButtonElement>
                 )}
             </div>
         </div>

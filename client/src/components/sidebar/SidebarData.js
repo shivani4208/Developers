@@ -45,7 +45,7 @@ export const SidebarData = [
     },
 
     {
-        title: 'Your posts',
+        title: 'Posts',
         path: '/posts',
         icon: <AiIcons.AiOutlineAppstoreAdd />,
     },

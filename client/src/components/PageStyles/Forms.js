@@ -13,12 +13,12 @@ export const FormLayout = styled.form`
     padding: 40px 30px;
     background: #ebf5fe;
     border-radius: 40px;
-    box-shadow: -6px -6px 20px rgba(255,255,255,1),
-                6px 6px 20px rgba(0,0,0,0.1);
+    // box-shadow: -6px -6px 20px rgba(255,255,255,1),
+    //             6px 6px 20px rgba(0,0,0,0.1);
 
     &:hover{
-        box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
-                inset 6px 6px 20px rgba(0,0,0,0.05);
+        // box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+        //         inset 6px 6px 20px rgba(0,0,0,0.05);
     }
 `;
 

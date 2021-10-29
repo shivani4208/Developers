@@ -4,6 +4,7 @@ import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
 import CartList from './CartList';
 import CartTotal from './CartTotal';
+import { FormTitle } from '../PageStyles/Forms';
 import { useCartState } from '../../global-state/index';
 
 export default function Cart() {
@@ -24,16 +25,13 @@ export default function Cart() {
       <EmptyCart />
     );
 
-  const dispatch = useDispatch();
   const user = JSON.parse(localStorage.getItem('profile'));
 
   if (!user?.result?.name) {
     return (
-      <div>
-        <div style={{color:"#000"}}>
+      <FormTitle className="m-5">
           Please Sign In to view your cart.
-        </div>
-      </div>
+      </FormTitle>
     );
   }
 
