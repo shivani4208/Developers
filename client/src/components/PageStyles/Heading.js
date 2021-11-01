@@ -9,11 +9,26 @@ export const Heading = styled.h1`
     font-family: 'Farro', sans-serif;
 `;
 
+export const LoginHeading = styled.h1`
+    font-size: 3rem;
+    color: #F50057;
+    font-weight: 700;
+    font-family: 'Farro', sans-serif;
+`;
+
+export const LoginContent = styled.h1`
+    font-size: 1.5rem;
+    color: #F50057;
+    font-weight: 500;
+    font-family: 'Farro', sans-serif;
+    margin: 0 0 20px 0;
+`;
+
 export const PostCreator = styled.h2`
     text-align: center;
     width: 100%;
     font-size: 1rem;
-    color: #fff;
+    color: #474747;
     font-style: italic;
     font-family: 'Farro', sans-serif;
 `;
@@ -29,7 +44,6 @@ export const PostDate = styled.h2`
 export const PostTag = styled.h2`
     text-align: center;
     font-size: 1rem;
-    color: #fff;
     font-weight: 200;
 `;
 
@@ -37,7 +51,6 @@ export const PostTitle = styled.h2`
     text-align: center;
     width: 100%;
     font-size: 1.7rem;
-    color: #fff;
     font-family: 'Farro', sans-serif;
 `;
 
@@ -45,6 +58,5 @@ export const PostMessage = styled.h3`
     text-align: center;
     width: 100%;
     font-size: 1.3rem;
-    color: #fff;
     font-family: 'Farro', sans-serif;
 `;

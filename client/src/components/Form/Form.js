@@ -36,7 +36,7 @@ const Form = ({ currentId, setCurrentId }) => {
   if (!user?.result?.name) {
     return (
       <div>
-        <FormTitle style={{color:"#fff"}}>
+        <FormTitle className="m-5">
           Please Sign In to post your advertisments.
         </FormTitle>
       </div>

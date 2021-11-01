@@ -6,11 +6,13 @@ import { useHistory } from 'react-router-dom';
 import { AUTH } from "../../constants/actionTypes";
 import { signin, signup } from "../../actions/auth";
 import Main from '../front/main/Main';
-import { Cards } from '../PageStyles/Cards';
 import Services from '../front/services/Services';
 import { FormLayout, FormTitle } from '../PageStyles/Forms';
 import { ButtonElement, AuthOption } from "../PageStyles/Button";
 import { FaGoogle } from "react-icons/fa";
+import { LoginDiv } from '../PageStyles/Cards';
+import image from './loginImg.svg';
+import { LoginContent, LoginHeading } from '../PageStyles/Heading';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
@@ -57,13 +59,13 @@ const Auth = () => {
     <div>
       <Main />
       <Services />
-      <div id="card" style={{ display: "flex", justifyContent: "center", margin: "10px" }}>
+      <LoginDiv id="card">
         <FormLayout style={{ width: "80vh", height: "auto", padding:"10px" }}>
-          <FormTitle>
+          {/* <FormTitle>
             {isSignup ? 'Sign Up' : 'Log In'}
-          </FormTitle>
+          </FormTitle> */}
           <form onSubmit={handleSubmit}>
-            <div>
+            {/* <div>
               {isSignup && (
                 <>
                   <Input type="text" name="firstName" placeholder="First Name" label="First Name" handleChange={handleChange} autoFocus />
@@ -76,12 +78,14 @@ const Auth = () => {
             </div>
             <ButtonElement type="submit">
               {isSignup ? 'Sign Up' : 'Log In'}
-            </ButtonElement>
+            </ButtonElement> */}
+            <LoginHeading>Explore now!</LoginHeading>
+            <LoginContent>Join us to explore your amazing journey of shopping with platform and keep trending!</LoginContent>
             <GoogleLogin
               clientId="413566942607-1is7bd9pptvt5tge954i481egmiqpgje.apps.googleusercontent.com"
               render={(renderProps) => (
                 <ButtonElement onClick={renderProps.onClick} disabled={renderProps.disabled} variant="contained">
-                  <FaGoogle /> Sign In with Google
+                  <FaGoogle /> &nbsp; Sign In with Google
                 </ButtonElement>
               )}
               onSuccess={googleSuccess}
@@ -89,13 +93,14 @@ const Auth = () => {
               cookiePolicy="single_host_origin"
             />
             <div>
-              <AuthOption onClick={switchMode}>
+              {/* <AuthOption onClick={switchMode}>
                 {isSignup ? 'Already have an account? Sign In' : "Don't have an account? SignUp"}
-              </AuthOption>
+              </AuthOption> */}
             </div>
           </form>
         </FormLayout>
-      </div>
+        <img src={image} alt="img" className="img-fluid" style={{height:"200px"}} />
+      </LoginDiv>
     </div>
   )
 }

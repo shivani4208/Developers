@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #F50057;
+    background: linear-gradient(90deg, #F50057, #fa672d);
     width: 100%;
     height: 90px;
     color: white;
@@ -23,11 +23,11 @@ p {
     font-weight: bold;
     display: flex;
     flex-wrap: nowrap;
-    color: #ffF;
+    color: #fff;
     text-decoration: none;
     padding-left: 10px;
     position: relative;
-    left: -200px;
+    left: -150px;
 }
 
 .name a:hover{
@@ -47,12 +47,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 190px;
+    width: 400px;
     margin: 10px;
 }
 
 .profile img {
     height: 35px;
     border-radius: 50%;
-    margin: 10px;
 }
