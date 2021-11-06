@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Faq from './Faq';
 
 import {
   useProductState,
@@ -60,6 +61,7 @@ export default function Details() {
         </div>
       </div>
       {/* End Product Info */}
+      <Faq/>
     </div>
   );
 }

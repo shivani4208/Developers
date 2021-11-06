@@ -7,6 +7,8 @@ import { ImSwitch } from "react-icons/im";
 import { SiShopify } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import { ButtonElement } from '../PageStyles/Button';
+import {BsMicFill} from 'react-icons/bs';
+import Mic from './Mic'
 import './navbar.css';
 
 const Navbar = () => {
@@ -41,6 +43,11 @@ const Navbar = () => {
             <p className="logo"></p>
             <p className="name"><Link to="/"><SiShopify className="m-2" style={{ color: "#fff", padding: "5px" }} />Shopway</Link></p>
             <p className="reflection">Shopway</p>
+            
+            {/* <input style={{
+                position:"relative",
+                right:"38%",
+                }} type="text" placeholder="Search an Item"/>     */}
             <div>
                 {user?.result ? (
                     <div className="profile">
@@ -52,6 +59,7 @@ const Navbar = () => {
                     <ButtonElement className="mb-4" style={{ width: "auto" }}><a style={{ textDecoration: "none", color: "white" }} href="/auth#card">Sign In</a></ButtonElement>
                 )}
             </div>
+               <Mic/>  
         </div>
     );
 };

@@ -9,6 +9,7 @@ import Details from './components/Details/Details';
 import Auth from './components/Auth/Auth';
 import Footer from './components/footer/Footer';
 import Sidebar from './components/sidebar/Sidebar';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/posts" exact component={PostsDashboard} />
             <Route path="/cart" component={Cart} />
             <Route path="/details" component={Details} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
         <Footer />
