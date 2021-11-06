@@ -47,10 +47,18 @@ const SidebarWrap = styled.nav`
 `;
 
 const Sidebar = () => {
-
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+
+    const user = JSON.parse(localStorage.getItem('profile'));
+
+    // if (!user?.result?.name) {
+    //     setSidebar = false;
+    //   }
+
+    //   else
+
 
     return (
         <>

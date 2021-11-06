@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import { deletePost, likePost } from "../../../actions/posts";
 import { AiOutlineEdit, AiOutlineLike, AiFillLike } from "react-icons/ai";
 import { MdDelete } from 'react-icons/md';
@@ -12,10 +13,25 @@ const Post = ({ post, setCurrentId }) => {
 
     const dispatch = useDispatch();
     const user = JSON.parse(localStorage.getItem('profile'));
+    const [likes, setLikes] = useState(post?.likes);
+    const history = useHistory();
+
+    const userId = user?.result.googleId || user?.result?._id;
+    const hasLikedPost = post.likes.find((like) => like === userId);
+
+    const handleLike = async () => {
+        dispatch(likePost(post._id));
+
+        if (hasLikedPost) {
+        setLikes(post.likes.filter((id) => id !== userId));
+        } else {
+        setLikes([...post.likes, userId]);
+        }
+    };
 
     const Likes = () => {
-        if (post.likes.length > 0) {
-            return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
+        if (likes.length > 0) {
+            return likes.find((like) => like === userId)
                 ? (
                     <><AiFillLike className="like-btn"/>&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
                 ) : (
@@ -25,8 +41,15 @@ const Post = ({ post, setCurrentId }) => {
         return <div className="likebtn"><AiOutlineLike className="like-btn"/>&nbsp;Like</div>;
     };
 
+    const openPost = (e) => {
+        // dispatch(getPost(post._id, history));
+    
+        history.push(`/posts/${post._id}`);
+      };
+
     return (
         <CardLayout style={{ maxWidth: "55vh" }}>
+            <ButtonElement onClick={openPost}>Open</ButtonElement>
             <img image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
             <PostCreator>By -{post.name}</PostCreator>
             <PostDate>{moment(post.createdAt).fromNow()}</PostDate>

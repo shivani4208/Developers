@@ -12,12 +12,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <StateProvider>
       <Provider store={store}>
         <App />
       </Provider>
-    </StateProvider>
-  </React.StrictMode>,
+    </StateProvider>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
