@@ -20,7 +20,7 @@ export default function Details() {
 
   const { id, title, img, price, company, info, inCart } = productDetails;
   return (
-    <div className="container py-5">
+    <div className="m-5 py-5">
       <div className="row">
         <div className="col-10 mx-auto text-center text-blue my-5">
           <h1>{title}</h1>

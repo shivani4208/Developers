@@ -2,7 +2,7 @@ import React from 'react';
 import Post from './Post/Post';
 import { useSelector } from "react-redux";
 import './postsStyle.css';
-import { Heading, LoginHeading } from '../PageStyles/Heading';
+import { Heading } from '../PageStyles/Heading';
 import Noposts from './Noposts';
 
 const Posts = ({ setCurrentId }) => {

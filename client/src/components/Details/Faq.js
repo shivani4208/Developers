@@ -61,7 +61,7 @@ export default function Faq() {
                     </Panel>
                 </Collapse>
                 <div className="ask">
-                    <div className="container">
+                    <div className="contain">
                         <p>Ask for any doubt</p>
                         <form  onSubmit={(e)=>{
                             e.preventDefault();

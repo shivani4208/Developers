@@ -14,6 +14,7 @@ export const LoginHeading = styled.h1`
     color: #F50057;
     font-weight: 700;
     font-family: 'Farro', sans-serif;
+    padding: 0 0 20px 0;
 `;
 
 export const LoginContent = styled.h1`
@@ -22,6 +23,7 @@ export const LoginContent = styled.h1`
     font-weight: 500;
     font-family: 'Farro', sans-serif;
     margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
 `;
 
 export const PostCreator = styled.h2`
@@ -45,6 +47,7 @@ export const PostTag = styled.h2`
     text-align: center;
     font-size: 1rem;
     font-weight: 200;
+    margin: 30px 0 20px 0;
 `;
 
 export const PostTitle = styled.h2`
@@ -52,6 +55,7 @@ export const PostTitle = styled.h2`
     width: 100%;
     font-size: 1.7rem;
     font-family: 'Farro', sans-serif;
+    font-weight: 700;
 `;
 
 export const PostMessage = styled.h3`

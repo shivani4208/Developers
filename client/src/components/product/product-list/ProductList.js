@@ -12,7 +12,7 @@ export default function ProductList() {
   return (
     <>
       <div className="py-5">
-        <div className="container">
+        <div className="p-5 m-3">
           <div className="row">{productItems}</div>
         </div>
       </div>

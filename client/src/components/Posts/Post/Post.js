@@ -49,20 +49,19 @@ const Post = ({ post, setCurrentId }) => {
 
     return (
         <CardLayout style={{ maxWidth: "55vh" }}>
-            <ButtonElement onClick={openPost}>Open</ButtonElement>
-            <img image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
+            <ButtonElement onClick={openPost} className="m-5">Open</ButtonElement>
             <PostCreator>By -{post.name}</PostCreator>
             <PostDate>{moment(post.createdAt).fromNow()}</PostDate>
             {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
                 <div>
-                    <ButtonElement onClick={() => setCurrentId(post._id)} style={{ color: 'white' }}>
+                    <ButtonElement onClick={() => setCurrentId(post._id)} style={{ color: 'white' }} className="m-3">
                         <AiOutlineEdit />
                     </ButtonElement>
                 </div>
             )}
             <PostTag>{post.tags.map((tag) => `#${tag} `)}</PostTag>
-            <PostTitle>{post.title}</PostTitle>
-            <PostMessage>{post.message}</PostMessage>
+            <PostTitle className="p-2">{post.title}</PostTitle>
+            <PostMessage className="p-3">{post.message}</PostMessage>
             <ButtonElement style={{ width: "40%" }} disabled={!user?.result} onClick={() => dispatch(likePost(post._id))}><Likes /> &nbsp;</ButtonElement>
             {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
                 <ButtonElement style={{ background: "orange", width: "30%" }} onClick={() => dispatch(deletePost(post._id))}>

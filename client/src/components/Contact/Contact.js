@@ -1,4 +1,5 @@
 import emailjs from 'emailjs-com';
+import { ButtonElement } from "../PageStyles/Button";
 import './Contact.css';
 
 export default function Contact() {
@@ -30,7 +31,7 @@ export default function Contact() {
                     <div className="form-control">
                         <textarea className="msg" placeholder="Ask comments" required></textarea>
                     </div>
-                    <button>Submit</button>
+                    <ButtonElement>Submit</ButtonElement>
                 </form>
             </div>
         </div>

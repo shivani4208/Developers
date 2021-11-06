@@ -6,8 +6,8 @@ const Main = () => {
         <div className="Container">
             <div className="background"></div>
             <div className="Content">
-              <h1 className="H1">To make a better tomorrow</h1>
-                 <p className="P">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi placeat cum quod necessitatibus alias maxime corrupti accusantium a qui quaerat!</p>
+              <h1 className="H1">Quality never goes out of style!</h1>
+                 <p className="P">Experience a fresh approach to shopping with us and others too by exploring different perspectives so that we provide you the perfect product!</p>
              </div>
         </div>
     )
