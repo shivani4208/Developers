@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../../common/Button';
 
+
 import {
   useProductState,
   useCartState,
@@ -63,7 +64,6 @@ export default function Details() {
           </div>
         </div>
       </div>
-      {/* End Product Info */}
     </div>
   );
 }

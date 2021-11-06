@@ -37,7 +37,6 @@ p {
 .reflection {
     background: linear-gradient(#F50057, rgb(255,255,255,0.3));
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     position: relative;
     right: 1020px;
     z-index: -1;

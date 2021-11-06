@@ -11,6 +11,7 @@ import PostDetails from './components/PostDetails/PostDetails';
 import CreatorOrTag from './components/CreatorOrTag/CreatorOrTag';
 import Footer from './components/footer/Footer';
 import Sidebar from './components/sidebar/Sidebar';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Route path={['/creators/:name', '/tags/:name']} component={CreatorOrTag} />
             <Route path="/cart" component={Cart} />
             <Route path="/details" component={Details} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
         <Footer />

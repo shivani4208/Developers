@@ -5,6 +5,7 @@ import * as BsIcons from 'react-icons/bs'
 import * as RiIcons from 'react-icons/ri'
 import * as IoIcons from 'react-icons/io'
 import * as AiIcons from 'react-icons/ai'
+import {MdEmail} from 'react-icons/md'
 
 export const SidebarData = [
     {
@@ -54,5 +55,9 @@ export const SidebarData = [
         title: 'Chat',
         path: '/chat',
         icon: <BsIcons.BsFillChatDotsFill />,
+    },{
+        title: 'Contact Us',
+        path: '/contact',
+        icon:  <MdEmail/>
     }
 ];
