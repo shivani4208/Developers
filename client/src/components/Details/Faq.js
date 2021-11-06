@@ -72,7 +72,7 @@ export default function Faq() {
                             }])
                             
                         }}>
-                        <input type="text" value={doubt} onChange={(e)=>setDoubt(e.target.value)} placeholder="Have any questions?Search for answer"></input>
+                        <input type="text" value={doubt} onChange={(e)=>setDoubt(e.target.value)} placeholder="Have any questions?Clear your doubts"></input>
                         </form>
                     </div>
                     <div className="doubts">
