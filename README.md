@@ -32,7 +32,7 @@ This is an ecommerce website that helps people to socialize and also gives them 
 
 ### Features being worked on:
 - Expense tracker to keep the user up to date.
-- - Chat feature <br/>
+- Chat feature <br/>
 - Language Translator <br />
 - Voice Controlled Input + Web speech API <br/>
 - Payment Gateway through payPal <br/>
