@@ -32,7 +32,14 @@ This is an ecommerce website that helps people to socialize and also gives them 
 
 ### Features being worked on:
 - Expense tracker to keep the user up to date.
+- - Chat feature <br/>
+- Language Translator <br />
+- Voice Controlled Input + Web speech API <br/>
+- Payment Gateway through payPal <br/>
+- Infinite Scrolling <br/>
+- Search Box with autoCompletion
+- User can keep track of ordered and cart items<br/>
 
 ---
-<h4 align="center">Shivani Kumari | Sakshi Dwivedi | Pragya Das
+<h4 align="center">Shivani Kumari | Sakshi Dwivedi
 <h5 align="center">✨If you like it, please feel free to give it a star!✨</h5>
